@@ -44,9 +44,11 @@ public class Activity
 
         foreach (string s in animation)
         {
+            Console.CursorVisible = false;
             Console.Write(s);
             Thread.Sleep(500);
             Console.Write("\b \b");
+            Console.CursorVisible = true;
         }
     }
 
@@ -54,36 +56,44 @@ public class Activity
     {
         for (int i = 6; i > 0; i--)
         {
+            Console.CursorVisible = false;
             Console.Write(i);
             Thread.Sleep(1000);
             Console.Write("\b \b");
+            Console.CursorVisible = true;
         }
     }
     protected void Countdown4()
     {
         for (int i = 4; i > 0; i--)
         {
+            Console.CursorVisible = false;
             Console.Write(i);
             Thread.Sleep(1000);
             Console.Write("\b \b");
+            Console.CursorVisible = true;
         }
     }
     protected void Countdown3()
     {
       for (int i = 3; i > 0; i--)
         {
+            Console.CursorVisible = false;
             Console.Write(i);
             Thread.Sleep(1000);
             Console.Write("\b \b");
+            Console.CursorVisible = true;
         }
     }
     protected void Countdown2()
     {
         for (int i = 2; i > 0; i--)
         {
+            Console.CursorVisible = false;
             Console.Write(i);
             Thread.Sleep(1000);
             Console.Write("\b \b");
+            Console.CursorVisible = true;
         }
     }
 }
