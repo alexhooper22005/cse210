@@ -1,0 +1,2 @@
+Simple|go|outside|10|False
+Eternal|go |inside|15
