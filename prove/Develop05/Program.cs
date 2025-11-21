@@ -157,9 +157,9 @@ class Program
                     Console.Write("\nEnter the number: ");
                     int index = int.Parse(Console.ReadLine()) - 1;
 
-                    goals[index].record();  // run the goal's record() method
+                    goals[index].record();  
 
-                    // Add points to total
+                    
                     totalPoints += goals[index].GetPoints();
 
                     Console.WriteLine($"You now have {totalPoints} points.");

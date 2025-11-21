@@ -13,7 +13,7 @@ public class EternalGoal : Goal
     
     public override void GoalInfo()
     {
-        base.GoalInfo();  // call parent version first
+        base.GoalInfo();  
 
       
          

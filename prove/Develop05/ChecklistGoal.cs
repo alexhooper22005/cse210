@@ -18,7 +18,7 @@ public class ChecklistGoal : Goal
     
     public override void GoalInfo()
     {
-        base.GoalInfo();  // call parent version first
+        base.GoalInfo();  
 
         Console.Write("How many times does this goal need to be accomplished for a bonus? ");
         _goalTimes = int.Parse(Console.ReadLine());
