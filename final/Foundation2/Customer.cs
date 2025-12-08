@@ -9,26 +9,26 @@ public class Customer
         _address = address;
     }
 
-    public void GetName(string name)
+    public void SetName(string name)
     {
         _name = name;
     }
-    public void GetAddress(Address address)
+    public void SetAddress(Address address)
     {
         _address = address;
     }
 
-    // public void SetName()
-    // {
-       
-    // }
-    // public void SetAddress()
-    // {
-    
-    // }
+    public string GetName()
+    {
+       return _name;
+    }
+    public Address GetAddress()
+    {
+        return _address;
+    }
 
     public bool LivesInUsa()
     {
-        return true;
+        return _address.IsInUSA();
     }
 }

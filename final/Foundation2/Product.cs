@@ -13,43 +13,43 @@ public class Product
         _quantity = quantity;
     }
 
-    public void GetName(string name)
+    public void SetName(string name)
     {
         _name = name;
     }
-    public void GetProductId(int productid)
+    public void SetProductId(int productid)
     {
         _productid = productid;
     }
-    public void GetPrice(double price)
+    public void SetPrice(double price)
     {
         _price = price;
     }
-    public void GetQuantity(int quantity)
+    public void SetQuantity(int quantity)
     {
         _quantity = quantity;
     }
-    // public void SetName()
-    // {
-        
-    // }
-    // public void SetProductId()
-    // {
-        
-    // }
-    // public void SetPrice()
-    // {
-        
-    // }
-    // public void SetQuantity()
-    // {
-        
-    // }
+    public string GetName()
+    {
+        return _name;
+    }
+    public int GetProductId()
+    {
+        return _productid;
+    }
+    public double GetPrice()
+    {
+        return _price;
+    }
+    public int GetQuantity()
+    {
+        return _quantity;
+    }
 
 
     public double GetTotalCost()
     {
-        return GetPrice(45.32) * GetQuantity(5);
+        return GetPrice() * GetQuantity();
     }
 
 }

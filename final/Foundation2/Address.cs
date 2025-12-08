@@ -13,42 +13,51 @@ public class Address
         _country = country;
     }
 
-    public void GetStreet(string street)
+    public void SetStreet(string street)
     {
         _street = street;
     }
-    public void GetCity(string city)
+    public void SetCity(string city)
     {
         _city = city;
     }
-    public void GetState(string state)
+    public void SetState(string state)
     {
         _state = state;
     }
-    public void GetCountry(string country)
+    public void SetCountry(string country)
     {
         _country = country;
     }
-    // public void SetStreet()
-    // {
-        
-    // }
-    // public void SetCity()
-    // {
-        
-    // }
-    // public void SetState()
-    // {
-        
-    // }
-    // public void SetCountry()
-    // {
-        
-    // }
+    public string GetStreet()
+    {
+        return _street;
+    }
+    public string GetCity()
+    {
+        return _city;
+    }
+    public string GetState()
+    {
+        return _state;
+    }
+    public string GetCountry()
+    {
+        return _country;
+    }
+
+        public override string ToString()
+    {
+        return $"{_street}\n{_city}, {_state}\n{_country}";
+    }
+
 
     public bool IsInUSA()
     {
-        
-        return true;
+        if (_country.ToUpper() == "USA")
+        {
+            return true;
+        }
+        else return false;
     }
 }
